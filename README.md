@@ -19,3 +19,7 @@ Durante el taller mostraré las bases del lenguaje y construiremos una aplicaci�
 1. Conocimientos en algún lenguaje de programación
 2. Lleva en tu laptop instalada la última versión de Elixir
 3. Visual Code con el plugin de Elixir
+
+## Duración
+
+3 horas
