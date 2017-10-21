@@ -56,7 +56,12 @@
 						<li>Mobile Engineering Manager en Incode</li>						
 					</ul>
 				</section>
-
+				<section>
+					<h2>Get Flashback</h2>
+					<video data-autoplay>						
+						<source data-src="images/flashback.mp4" type="video/mp4" />
+					</video>
+				</section>
 				
 					<section>
 						<h2>¿Por qué estamos aquí?</h2>						
@@ -296,6 +301,33 @@
 							assert Map.get(OctoberTalks.Futbol.get_teams, "9885") == "Juventus"
 						end
 					</code></pre>
+				</section>
+				<section >
+					<h2>Muy bien pero</h2>
+					<p >
+						<img style="height:500px"  src="images/core.png" alt="">
+					</p>
+					
+				</section>
+				<section>
+					<h2>Elixir Flow</h2>
+					<p>Anunciado a mediados 2016</p>
+					<p>Su objetivo es paralelizar operaciones sobre colecciones</p>					
+				</section>
+				<section>
+					<pre><code class="hljs" data-trim contenteditable>
+					def get_teams do
+						File.stream!("data/team.csv")
+						|> Stream.drop(1)
+						|> Flow.from_enumerable
+						|> Flow.map(&String.split(&1, ","))
+						|> Flow.partition
+						|> Enum.reduce(Map.new, fn(values, map) -> add_team_to_map(map, values) end)    
+					end
+					</code></pre>
+				</section>
+				<section>
+					<h2>Usamos todos los cores!</h2>					
 				</section>
 				<section>
 					<h2>Gracias</h2>
